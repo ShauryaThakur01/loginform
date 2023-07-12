@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Stutrait</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/2410935406.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+    <div class="container">
+      <h1>Login to Stutrait</h1>
+      <form action="process.php" method="post">
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your E-Mail">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <!-- <button class="btn">Log-In</button> -->
+        <div class="middle">Already a member?</div>
+        <button class="btn" onclick="redirectToWebsite()">Log-In</button>
+        <div class="middle">Are you a new member?</div>
+        <button class="btn" onclick="redirectToWebsite()">Sign-Up</button>
+    </form>
+    <script>
+      function redirectToWebsite() {
+        window.location.href = "Travelocom/index.html";
+      }
+    </script>
+  </body>
+</html>
